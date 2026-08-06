@@ -1,6 +1,9 @@
+# This CITATION.cff file was generated with cffinit.
+
 cff-version: 1.2.0
 title: >-
-  PHALANX: A Framework for Continuous Firewall Policy Hygiene
+  PHALANX: PHALANX (Policy-Hygiene Analysis Layer for
+  ANomaly eXamination)
 message: 'If you use this software, please cite it as below.'
 type: software
 authors:
@@ -12,36 +15,46 @@ identifiers:
     value: 10.5281/zenodo.21648395
 repository-code: 'https://github.com/farajimahdi/PHALANX-Article'
 abstract: >-
-  PHALANX: A Reproducible Multi-Vendor Framework for Structural 
-  Firewall Policy Analysis and Finding Prioritization
+  PHALANX: A Reproducible Multi-Vendor Framework for
+  Structural  Firewall Policy Analysis and Finding
+  Prioritization
 
 
-  Abstract
-  Firewall rulesets continuously change as networks evolve. Rules introduced under 
-  operational pressure may later become redundant, conflict with existing rules, 
-  or unintentionally expand access beyond their original purpose. These issues are 
-  policy-management defects rather than software vulnerabilities, and periodic 
-  manual audits are often insufficient for tracking gradual policy drift. This 
-  paper presents PHALANX, a reproducible framework for structural firewall 
-  policy analysis across multiple platforms. PHALANX uses separate native parsers 
-  to map platform-specific configurations into a unified policy model that preserves 
-  the distinction between an unsupported concept (\texttt{N/A}) and an explicitly unrestricted 
-  value (\texttt{any}). A shared deterministic analysis engine identifies five classes of 
-  structural findings and assigns configurable prioritization scores while maintaining 
-  traceable evidence for each detected relation. The controlled benchmark contains 2{,}503 
-  rules implemented on FortiGate, Palo Alto, pfSense, OPNsense, and IPImen. 
-  After multidimensional predicate validation and anchor-level aggregation, the 
-  engine reported 970 structural findings. Results from FortiGate 
-  and Palo Alto demonstrate that the same analysis engine can process normalized 
-  policies from two unrelated policy architectures, while the agreement between pfSense 
-  and OPNsense results provides a narrower consistency check for related pf-based 
-  normalization paths. Two practitioners independently reviewed a sample of 100 findings. 
-  They classified 74 findings as genuine, achieving 94\% raw agreement and 
-  Cohen's $\kappa=0.84$ (95\% CI: 0.70--0.95). On the reported hardware, a 
-  synthetic 4{,}000-rule policy was analyzed in approximately 55 seconds. 
-  Integration into a configuration pipeline was not evaluated. Source code, 
-  reproduction scripts, and the anonymized benchmark dataset are publicly available.
-  
+  Abstract Firewall rulesets continuously change as networks
+  evolve. Rules introduced under  operational pressure may
+  later become redundant, conflict with existing rules,  or
+  unintentionally expand access beyond their original
+  purpose. These issues are  policy-management defects
+  rather than software vulnerabilities, and periodic  manual
+  audits are often insufficient for tracking gradual policy
+  drift. This  paper presents PHALANX, a reproducible
+  framework for structural firewall  policy analysis across
+  multiple platforms. PHALANX uses separate native parsers 
+  to map platform-specific configurations into a unified
+  policy model that preserves  the distinction between an
+  unsupported concept (\texttt{N/A}) and an explicitly
+  unrestricted  value (\texttt{any}). A shared deterministic
+  analysis engine identifies five classes of  structural
+  findings and assigns configurable prioritization scores
+  while maintaining  traceable evidence for each detected
+  relation. The controlled benchmark contains 2{,}503  rules
+  implemented on FortiGate, Palo Alto, pfSense, OPNsense,
+  and IPImen.  After multidimensional predicate validation
+  and anchor-level aggregation, the  engine reported 970
+  structural findings. Results from FortiGate  and Palo Alto
+  demonstrate that the same analysis engine can process
+  normalized  policies from two unrelated policy
+  architectures, while the agreement between pfSense  and
+  OPNsense results provides a narrower consistency check for
+  related pf-based  normalization paths. Two practitioners
+  independently reviewed a sample of 100 findings.  They
+  classified 74 findings as genuine, achieving 94\% raw
+  agreement and  Cohen's $\kappa=0.84$ (95\% CI:
+  0.70--0.95). On the reported hardware, a  synthetic
+  4{,}000-rule policy was analyzed in approximately 55
+  seconds.  Integration into a configuration pipeline was
+  not evaluated. Source code,  reproduction scripts, and the
+  anonymized benchmark dataset are publicly available.
 keywords:
   - Network security
   - Configuration drift
