@@ -1,0 +1,374 @@
+{
+  "seed": 42,
+  "n_random": 200,
+  "per_vendor": {
+    "fortigate": {
+      "beta_bounded": {
+        "n_perturbations": 201,
+        "spearman_mean": 0.9854,
+        "spearman_min": 0.9078,
+        "topk_overlap_mean": {
+          "10": 0.9736,
+          "20": 0.9289,
+          "50": 0.9377
+        },
+        "topk_overlap_min": {
+          "10": 0.9,
+          "20": 0.6,
+          "50": 0.82
+        }
+      },
+      "sigma": {
+        "n_perturbations": 201,
+        "spearman_mean": 0.9829,
+        "spearman_min": 0.961,
+        "topk_overlap_mean": {
+          "10": 0.9886,
+          "20": 0.995,
+          "50": 0.9535
+        },
+        "topk_overlap_min": {
+          "10": 0.9,
+          "20": 0.85,
+          "50": 0.92
+        }
+      },
+      "combined": {
+        "n_perturbations": 200,
+        "spearman_mean": 0.9738,
+        "spearman_min": 0.8855,
+        "topk_overlap_mean": {
+          "10": 0.9655,
+          "20": 0.9222,
+          "50": 0.9288
+        },
+        "topk_overlap_min": {
+          "10": 0.8,
+          "20": 0.6,
+          "50": 0.82
+        }
+      },
+      "beta_simplex": {
+        "n_perturbations": 207,
+        "spearman_mean": 0.9081,
+        "spearman_min": 0.5762,
+        "topk_overlap_mean": {
+          "10": 0.8643,
+          "20": 0.7507,
+          "50": 0.8255
+        },
+        "topk_overlap_min": {
+          "10": 0.5,
+          "20": 0.45,
+          "50": 0.58
+        }
+      }
+    },
+    "paloalto": {
+      "beta_bounded": {
+        "n_perturbations": 201,
+        "spearman_mean": 0.988,
+        "spearman_min": 0.9204,
+        "topk_overlap_mean": {
+          "10": 0.8985,
+          "20": 0.9358,
+          "50": 0.9377
+        },
+        "topk_overlap_min": {
+          "10": 0.8,
+          "20": 0.7,
+          "50": 0.82
+        }
+      },
+      "sigma": {
+        "n_perturbations": 201,
+        "spearman_mean": 0.9832,
+        "spearman_min": 0.9596,
+        "topk_overlap_mean": {
+          "10": 0.9567,
+          "20": 0.9958,
+          "50": 0.9557
+        },
+        "topk_overlap_min": {
+          "10": 0.8,
+          "20": 0.9,
+          "50": 0.92
+        }
+      },
+      "combined": {
+        "n_perturbations": 200,
+        "spearman_mean": 0.9747,
+        "spearman_min": 0.899,
+        "topk_overlap_mean": {
+          "10": 0.8945,
+          "20": 0.9235,
+          "50": 0.929
+        },
+        "topk_overlap_min": {
+          "10": 0.7,
+          "20": 0.7,
+          "50": 0.82
+        }
+      },
+      "beta_simplex": {
+        "n_perturbations": 207,
+        "spearman_mean": 0.905,
+        "spearman_min": 0.5411,
+        "topk_overlap_mean": {
+          "10": 0.7773,
+          "20": 0.7621,
+          "50": 0.8092
+        },
+        "topk_overlap_min": {
+          "10": 0.6,
+          "20": 0.55,
+          "50": 0.56
+        }
+      }
+    },
+    "pfsense": {
+      "beta_bounded": {
+        "n_perturbations": 201,
+        "spearman_mean": 0.9941,
+        "spearman_min": 0.9481,
+        "topk_overlap_mean": {
+          "10": 0.904,
+          "20": 0.8545,
+          "50": 0.9779
+        },
+        "topk_overlap_min": {
+          "10": 0.5,
+          "20": 0.55,
+          "50": 0.84
+        }
+      },
+      "sigma": {
+        "n_perturbations": 201,
+        "spearman_mean": 0.9265,
+        "spearman_min": 0.8142,
+        "topk_overlap_mean": {
+          "10": 0.9667,
+          "20": 0.9244,
+          "50": 0.9768
+        },
+        "topk_overlap_min": {
+          "10": 0.8,
+          "20": 0.65,
+          "50": 0.88
+        }
+      },
+      "combined": {
+        "n_perturbations": 200,
+        "spearman_mean": 0.928,
+        "spearman_min": 0.8228,
+        "topk_overlap_mean": {
+          "10": 0.8855,
+          "20": 0.831,
+          "50": 0.9511
+        },
+        "topk_overlap_min": {
+          "10": 0.4,
+          "20": 0.5,
+          "50": 0.82
+        }
+      },
+      "beta_simplex": {
+        "n_perturbations": 207,
+        "spearman_mean": 0.9285,
+        "spearman_min": 0.7038,
+        "topk_overlap_mean": {
+          "10": 0.6217,
+          "20": 0.6879,
+          "50": 0.8386
+        },
+        "topk_overlap_min": {
+          "10": 0.0,
+          "20": 0.25,
+          "50": 0.62
+        }
+      }
+    },
+    "opnsense": {
+      "beta_bounded": {
+        "n_perturbations": 201,
+        "spearman_mean": 0.9941,
+        "spearman_min": 0.9481,
+        "topk_overlap_mean": {
+          "10": 0.904,
+          "20": 0.8545,
+          "50": 0.9779
+        },
+        "topk_overlap_min": {
+          "10": 0.5,
+          "20": 0.55,
+          "50": 0.84
+        }
+      },
+      "sigma": {
+        "n_perturbations": 201,
+        "spearman_mean": 0.9265,
+        "spearman_min": 0.8142,
+        "topk_overlap_mean": {
+          "10": 0.9667,
+          "20": 0.9244,
+          "50": 0.9768
+        },
+        "topk_overlap_min": {
+          "10": 0.8,
+          "20": 0.65,
+          "50": 0.88
+        }
+      },
+      "combined": {
+        "n_perturbations": 200,
+        "spearman_mean": 0.928,
+        "spearman_min": 0.8228,
+        "topk_overlap_mean": {
+          "10": 0.8855,
+          "20": 0.831,
+          "50": 0.9511
+        },
+        "topk_overlap_min": {
+          "10": 0.4,
+          "20": 0.5,
+          "50": 0.82
+        }
+      },
+      "beta_simplex": {
+        "n_perturbations": 207,
+        "spearman_mean": 0.9285,
+        "spearman_min": 0.7038,
+        "topk_overlap_mean": {
+          "10": 0.6217,
+          "20": 0.6879,
+          "50": 0.8386
+        },
+        "topk_overlap_min": {
+          "10": 0.0,
+          "20": 0.25,
+          "50": 0.62
+        }
+      }
+    },
+    "ipimen": {
+      "beta_bounded": {
+        "n_perturbations": 201,
+        "spearman_mean": 0.9905,
+        "spearman_min": 0.9175,
+        "topk_overlap_mean": {
+          "10": 0.9711,
+          "20": 0.9833,
+          "50": 0.9529
+        },
+        "topk_overlap_min": {
+          "10": 0.8,
+          "20": 0.65,
+          "50": 0.7
+        }
+      },
+      "sigma": {
+        "n_perturbations": 201,
+        "spearman_mean": 0.9923,
+        "spearman_min": 0.9667,
+        "topk_overlap_mean": {
+          "10": 0.9791,
+          "20": 0.9953,
+          "50": 0.9881
+        },
+        "topk_overlap_min": {
+          "10": 0.9,
+          "20": 0.85,
+          "50": 0.92
+        }
+      },
+      "combined": {
+        "n_perturbations": 200,
+        "spearman_mean": 0.9846,
+        "spearman_min": 0.9097,
+        "topk_overlap_mean": {
+          "10": 0.952,
+          "20": 0.969,
+          "50": 0.9491
+        },
+        "topk_overlap_min": {
+          "10": 0.7,
+          "20": 0.6,
+          "50": 0.7
+        }
+      },
+      "beta_simplex": {
+        "n_perturbations": 207,
+        "spearman_mean": 0.902,
+        "spearman_min": 0.4602,
+        "topk_overlap_mean": {
+          "10": 0.8522,
+          "20": 0.7787,
+          "50": 0.7871
+        },
+        "topk_overlap_min": {
+          "10": 0.5,
+          "20": 0.45,
+          "50": 0.42
+        }
+      }
+    }
+  },
+  "aggregate": {
+    "beta_bounded": {
+      "spearman_mean": 0.9904,
+      "spearman_min": 0.9078,
+      "topk_overlap_mean": {
+        "10": 0.9302,
+        "20": 0.9114,
+        "50": 0.9568
+      },
+      "topk_overlap_min": {
+        "10": 0.5,
+        "20": 0.55,
+        "50": 0.7
+      }
+    },
+    "sigma": {
+      "spearman_mean": 0.9623,
+      "spearman_min": 0.8142,
+      "topk_overlap_mean": {
+        "10": 0.9716,
+        "20": 0.967,
+        "50": 0.9702
+      },
+      "topk_overlap_min": {
+        "10": 0.8,
+        "20": 0.65,
+        "50": 0.88
+      }
+    },
+    "combined": {
+      "spearman_mean": 0.9578,
+      "spearman_min": 0.8228,
+      "topk_overlap_mean": {
+        "10": 0.9166,
+        "20": 0.8953,
+        "50": 0.9418
+      },
+      "topk_overlap_min": {
+        "10": 0.4,
+        "20": 0.5,
+        "50": 0.7
+      }
+    },
+    "beta_simplex": {
+      "spearman_mean": 0.9144,
+      "spearman_min": 0.4602,
+      "topk_overlap_mean": {
+        "10": 0.7474,
+        "20": 0.7335,
+        "50": 0.8198
+      },
+      "topk_overlap_min": {
+        "10": 0.0,
+        "20": 0.25,
+        "50": 0.42
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "per_vendor": {
+    "fortigate": {
+      "rules_total": 501,
+      "rules_enabled": 420,
+      "anomalies": {
+        "shadowing": 7,
+        "redundancy": 19,
+        "conflict": 74,
+        "generalization": 15,
+        "over_permissive": 14
+      },
+      "anomalies_total": 129
+    },
+    "paloalto": {
+      "rules_total": 501,
+      "rules_enabled": 420,
+      "anomalies": {
+        "shadowing": 7,
+        "redundancy": 21,
+        "conflict": 78,
+        "generalization": 17,
+        "over_permissive": 14
+      },
+      "anomalies_total": 137
+    },
+    "pfsense": {
+      "rules_total": 500,
+      "rules_enabled": 419,
+      "anomalies": {
+        "shadowing": 63,
+        "redundancy": 101,
+        "conflict": 51,
+        "generalization": 147,
+        "over_permissive": 47
+      },
+      "anomalies_total": 409
+    },
+    "opnsense": {
+      "rules_total": 500,
+      "rules_enabled": 419,
+      "anomalies": {
+        "shadowing": 63,
+        "redundancy": 101,
+        "conflict": 51,
+        "generalization": 147,
+        "over_permissive": 47
+      },
+      "anomalies_total": 409
+    },
+    "ipimen": {
+      "rules_total": 501,
+      "rules_enabled": 420,
+      "anomalies": {
+        "shadowing": 9,
+        "redundancy": 18,
+        "conflict": 245,
+        "generalization": 17,
+        "over_permissive": 14
+      },
+      "anomalies_total": 303
+    }
+  },
+  "totals": {
+    "rules_total": 2503,
+    "rules_enabled": 2098,
+    "anomalies": {
+      "shadowing": 149,
+      "redundancy": 260,
+      "conflict": 499,
+      "generalization": 343,
+      "over_permissive": 136
+    },
+    "anomalies_total": 1387
+  }
+}

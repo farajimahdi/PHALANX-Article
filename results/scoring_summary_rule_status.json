@@ -1,0 +1,594 @@
+{
+  "per_vendor": {
+    "fortigate": {
+      "findings": 129,
+      "risk_max": 0.8257,
+      "risk_mean": 0.3139,
+      "top5": [
+        {
+          "vendor": "fortigate",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "97",
+              "rule_name": "Deny VPN users from MGMT",
+              "seq": 4,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.8257,
+          "sigma": 1.0,
+          "phi": 0.8257,
+          "factors": {
+            "blast_radius": 0.6438,
+            "exposure": 1.0,
+            "permissiveness": 0.8333
+          },
+          "explanation": "Rule 97 (seq 4) is an allow rule that is over-permissive (5b:any-dport∧any-proto), violating least-privilege."
+        },
+        {
+          "vendor": "fortigate",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "2970",
+              "rule_name": "WAN to PLC network except Backup se",
+              "seq": 140,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.7435,
+          "sigma": 1.0,
+          "phi": 0.7435,
+          "factors": {
+            "blast_radius": 0.3971,
+            "exposure": 1.0,
+            "permissiveness": 0.8333
+          },
+          "explanation": "Rule 2970 (seq 140) is an allow rule that is over-permissive (5a:any-src∧any-dst), violating least-privilege."
+        },
+        {
+          "vendor": "fortigate",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "4233",
+              "rule_name": "Dev team access to CCTV system",
+              "seq": 203,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.7222,
+          "sigma": 1.0,
+          "phi": 0.7222,
+          "factors": {
+            "blast_radius": 1.0,
+            "exposure": 0.5,
+            "permissiveness": 0.6667
+          },
+          "explanation": "Rule 4233 (seq 203) is an allow rule that is over-permissive (5a:any-src∧any-dst), violating least-privilege."
+        },
+        {
+          "vendor": "fortigate",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "6299",
+              "rule_name": "Finance team to NTP Server",
+              "seq": 314,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.689,
+          "sigma": 1.0,
+          "phi": 0.689,
+          "factors": {
+            "blast_radius": 0.4005,
+            "exposure": 1.0,
+            "permissiveness": 0.6667
+          },
+          "explanation": "Rule 6299 (seq 314) is an allow rule that is over-permissive (5a:any-src∧any-dst), violating least-privilege."
+        },
+        {
+          "vendor": "fortigate",
+          "anomaly_type": "shadowing",
+          "rules": [
+            {
+              "rule_id": "6299",
+              "rule_name": "Finance team to NTP Server",
+              "seq": 314,
+              "role": "shadowing"
+            },
+            {
+              "rule_id": "7828",
+              "rule_name": "Web servers access to any",
+              "seq": 386,
+              "role": "shadowed"
+            }
+          ],
+          "risk": 0.6583,
+          "sigma": 1.0,
+          "phi": 0.6583,
+          "factors": {
+            "blast_radius": 0.3082,
+            "exposure": 1.0,
+            "permissiveness": 0.6667
+          },
+          "explanation": "Rule 7828 (seq 386, action 'deny') is shadowed by earlier rule 6299 (seq 314, action 'allow'): every flow it matches is already decided by the earlier rule, so it never executes."
+        }
+      ]
+    },
+    "paloalto": {
+      "findings": 137,
+      "risk_max": 0.9434,
+      "risk_mean": 0.3205,
+      "top5": [
+        {
+          "vendor": "paloalto",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "8b1e7efa-95f5-4eb8-9ad1-9da21d373867",
+              "rule_name": "WAN to PLC network except Backup servers",
+              "seq": 140,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.9434,
+          "sigma": 1.0,
+          "phi": 0.9434,
+          "factors": {
+            "blast_radius": 0.9968,
+            "exposure": 1.0,
+            "permissiveness": 0.8333
+          },
+          "explanation": "Rule 8b1e7efa-95f5-4eb8-9ad1-9da21d373867 (seq 140) is an allow rule that is over-permissive (5a:any-src∧any-dst), violating least-privilege."
+        },
+        {
+          "vendor": "paloalto",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "221d74b7-c0f5-4f72-b5f8-0a8c807501f7",
+              "rule_name": "Finance team to NTP Server",
+              "seq": 314,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.8889,
+          "sigma": 1.0,
+          "phi": 0.8889,
+          "factors": {
+            "blast_radius": 1.0,
+            "exposure": 1.0,
+            "permissiveness": 0.6667
+          },
+          "explanation": "Rule 221d74b7-c0f5-4f72-b5f8-0a8c807501f7 (seq 314) is an allow rule that is over-permissive (5a:any-src∧any-dst), violating least-privilege."
+        },
+        {
+          "vendor": "paloalto",
+          "anomaly_type": "shadowing",
+          "rules": [
+            {
+              "rule_id": "221d74b7-c0f5-4f72-b5f8-0a8c807501f7",
+              "rule_name": "Finance team to NTP Server",
+              "seq": 314,
+              "role": "shadowing"
+            },
+            {
+              "rule_id": "ddfec714-eb7d-430e-8f4c-91d3ec9a550e",
+              "rule_name": "Web servers access to any",
+              "seq": 386,
+              "role": "shadowed"
+            }
+          ],
+          "risk": 0.8598,
+          "sigma": 1.0,
+          "phi": 0.8598,
+          "factors": {
+            "blast_radius": 0.9128,
+            "exposure": 1.0,
+            "permissiveness": 0.6667
+          },
+          "explanation": "Rule ddfec714-eb7d-430e-8f4c-91d3ec9a550e (seq 386, action 'deny') is shadowed by earlier rule 221d74b7-c0f5-4f72-b5f8-0a8c807501f7 (seq 314, action 'allow'): every flow it matches is already decided by the earlier rule, so it never executes."
+        },
+        {
+          "vendor": "paloalto",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "a8f63581-e59a-44ee-8752-01eebebb35b7",
+              "rule_name": "Deny VPN users from MGMT",
+              "seq": 4,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.8139,
+          "sigma": 1.0,
+          "phi": 0.8139,
+          "factors": {
+            "blast_radius": 0.6084,
+            "exposure": 1.0,
+            "permissiveness": 0.8333
+          },
+          "explanation": "Rule a8f63581-e59a-44ee-8752-01eebebb35b7 (seq 4) is an allow rule that is over-permissive (5b:any-dport∧any-proto), violating least-privilege."
+        },
+        {
+          "vendor": "paloalto",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "3a40b285-ae76-4926-aad5-aff4e68bc123",
+              "rule_name": "Dev team access to CCTV system",
+              "seq": 203,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.7039,
+          "sigma": 1.0,
+          "phi": 0.7039,
+          "factors": {
+            "blast_radius": 0.945,
+            "exposure": 0.5,
+            "permissiveness": 0.6667
+          },
+          "explanation": "Rule 3a40b285-ae76-4926-aad5-aff4e68bc123 (seq 203) is an allow rule that is over-permissive (5a:any-src∧any-dst), violating least-privilege."
+        }
+      ]
+    },
+    "pfsense": {
+      "findings": 300,
+      "risk_max": 0.8333,
+      "risk_mean": 0.2348,
+      "top5": [
+        {
+          "vendor": "pfsense",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "1722544385",
+              "rule_name": "Drop VPN to MGMT",
+              "seq": 185,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.8333,
+          "sigma": 1.0,
+          "phi": 0.8333,
+          "factors": {
+            "blast_radius": 1.0,
+            "exposure": 0.5,
+            "permissiveness": 1.0
+          },
+          "explanation": "Rule 1722544385 (seq 185) is an allow rule that is a full any-any-any permit (5a:any-src∧any-dst; 5b:any-dport∧any-proto), violating least-privilege."
+        },
+        {
+          "vendor": "pfsense",
+          "anomaly_type": "shadowing",
+          "rules": [
+            {
+              "rule_id": "1722544385",
+              "rule_name": "Drop VPN to MGMT",
+              "seq": 185,
+              "role": "shadowing"
+            },
+            {
+              "rule_id": "1741898292",
+              "rule_name": "Web Sever access from VPN",
+              "seq": 492,
+              "role": "shadowed"
+            }
+          ],
+          "risk": 0.8243,
+          "sigma": 1.0,
+          "phi": 0.8243,
+          "factors": {
+            "blast_radius": 0.973,
+            "exposure": 0.5,
+            "permissiveness": 1.0
+          },
+          "explanation": "Rule 1741898292 (seq 492, action 'deny') is shadowed by earlier rule 1722544385 (seq 185, action 'allow'): every flow it matches is already decided by the earlier rule, so it never executes."
+        },
+        {
+          "vendor": "pfsense",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "1713558803",
+              "rule_name": "Dev team access to CCTV system",
+              "seq": 203,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.8063,
+          "sigma": 1.0,
+          "phi": 0.8063,
+          "factors": {
+            "blast_radius": 0.9189,
+            "exposure": 1.0,
+            "permissiveness": 0.5
+          },
+          "explanation": "Rule 1713558803 (seq 203) is an allow rule that is over-permissive (5a:any-src∧any-dst), violating least-privilege."
+        },
+        {
+          "vendor": "pfsense",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "1725568626",
+              "rule_name": "WAN to any",
+              "seq": 426,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.8063,
+          "sigma": 1.0,
+          "phi": 0.8063,
+          "factors": {
+            "blast_radius": 0.9189,
+            "exposure": 1.0,
+            "permissiveness": 0.5
+          },
+          "explanation": "Rule 1725568626 (seq 426) is an allow rule that is over-permissive (5a:any-src∧any-dst), violating least-privilege."
+        },
+        {
+          "vendor": "pfsense",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "1754685142",
+              "rule_name": "DMZ outbound to Backup server",
+              "seq": 142,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.723,
+          "sigma": 1.0,
+          "phi": 0.723,
+          "factors": {
+            "blast_radius": 0.9189,
+            "exposure": 0.75,
+            "permissiveness": 0.5
+          },
+          "explanation": "Rule 1754685142 (seq 142) is an allow rule that is over-permissive (5a:any-src∧any-dst), violating least-privilege."
+        }
+      ]
+    },
+    "opnsense": {
+      "findings": 300,
+      "risk_max": 0.8333,
+      "risk_mean": 0.2348,
+      "top5": [
+        {
+          "vendor": "opnsense",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "57a5e2e1-77df-4601-b3ab-4dab5d2fe924",
+              "rule_name": "Drop VPN to MGMT",
+              "seq": 185,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.8333,
+          "sigma": 1.0,
+          "phi": 0.8333,
+          "factors": {
+            "blast_radius": 1.0,
+            "exposure": 0.5,
+            "permissiveness": 1.0
+          },
+          "explanation": "Rule 57a5e2e1-77df-4601-b3ab-4dab5d2fe924 (seq 185) is an allow rule that is a full any-any-any permit (5a:any-src∧any-dst; 5b:any-dport∧any-proto), violating least-privilege."
+        },
+        {
+          "vendor": "opnsense",
+          "anomaly_type": "shadowing",
+          "rules": [
+            {
+              "rule_id": "57a5e2e1-77df-4601-b3ab-4dab5d2fe924",
+              "rule_name": "Drop VPN to MGMT",
+              "seq": 185,
+              "role": "shadowing"
+            },
+            {
+              "rule_id": "b2e14184-73b6-4f34-bd0f-109762ce8b3b",
+              "rule_name": "Web Sever access from VPN",
+              "seq": 492,
+              "role": "shadowed"
+            }
+          ],
+          "risk": 0.8243,
+          "sigma": 1.0,
+          "phi": 0.8243,
+          "factors": {
+            "blast_radius": 0.973,
+            "exposure": 0.5,
+            "permissiveness": 1.0
+          },
+          "explanation": "Rule b2e14184-73b6-4f34-bd0f-109762ce8b3b (seq 492, action 'deny') is shadowed by earlier rule 57a5e2e1-77df-4601-b3ab-4dab5d2fe924 (seq 185, action 'allow'): every flow it matches is already decided by the earlier rule, so it never executes."
+        },
+        {
+          "vendor": "opnsense",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "6ffd3e2a-09d0-4e28-8084-7147f460c2f1",
+              "rule_name": "Dev team access to CCTV system",
+              "seq": 203,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.8063,
+          "sigma": 1.0,
+          "phi": 0.8063,
+          "factors": {
+            "blast_radius": 0.9189,
+            "exposure": 1.0,
+            "permissiveness": 0.5
+          },
+          "explanation": "Rule 6ffd3e2a-09d0-4e28-8084-7147f460c2f1 (seq 203) is an allow rule that is over-permissive (5a:any-src∧any-dst), violating least-privilege."
+        },
+        {
+          "vendor": "opnsense",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "42eaf5f7-e933-477e-98fb-7a20b12bff3b",
+              "rule_name": "WAN to any",
+              "seq": 426,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.8063,
+          "sigma": 1.0,
+          "phi": 0.8063,
+          "factors": {
+            "blast_radius": 0.9189,
+            "exposure": 1.0,
+            "permissiveness": 0.5
+          },
+          "explanation": "Rule 42eaf5f7-e933-477e-98fb-7a20b12bff3b (seq 426) is an allow rule that is over-permissive (5a:any-src∧any-dst), violating least-privilege."
+        },
+        {
+          "vendor": "opnsense",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "64c80b25-5bbf-4b2a-ac3e-c65d6f980356",
+              "rule_name": "DMZ outbound to Backup server",
+              "seq": 142,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.723,
+          "sigma": 1.0,
+          "phi": 0.723,
+          "factors": {
+            "blast_radius": 0.9189,
+            "exposure": 0.75,
+            "permissiveness": 0.5
+          },
+          "explanation": "Rule 64c80b25-5bbf-4b2a-ac3e-c65d6f980356 (seq 142) is an allow rule that is over-permissive (5a:any-src∧any-dst), violating least-privilege."
+        }
+      ]
+    },
+    "ipimen": {
+      "findings": 104,
+      "risk_max": 0.9353,
+      "risk_mean": 0.3133,
+      "top5": [
+        {
+          "vendor": "ipimen",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "4",
+              "rule_name": "Deny VPN users from MGMT",
+              "seq": 4,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.9353,
+          "sigma": 1.0,
+          "phi": 0.9353,
+          "factors": {
+            "blast_radius": 0.9726,
+            "exposure": 1.0,
+            "permissiveness": 0.8333
+          },
+          "explanation": "Rule 4 (seq 4) is an allow rule that is over-permissive (5b:any-dport∧any-proto), violating least-privilege."
+        },
+        {
+          "vendor": "ipimen",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "140",
+              "rule_name": "WAN to PLC network except Backup servers",
+              "seq": 140,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.7435,
+          "sigma": 1.0,
+          "phi": 0.7435,
+          "factors": {
+            "blast_radius": 0.3971,
+            "exposure": 1.0,
+            "permissiveness": 0.8333
+          },
+          "explanation": "Rule 140 (seq 140) is an allow rule that is over-permissive (5a:any-src∧any-dst), violating least-privilege."
+        },
+        {
+          "vendor": "ipimen",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "203",
+              "rule_name": "Dev team access to CCTV system",
+              "seq": 203,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.7222,
+          "sigma": 1.0,
+          "phi": 0.7222,
+          "factors": {
+            "blast_radius": 1.0,
+            "exposure": 0.5,
+            "permissiveness": 0.6667
+          },
+          "explanation": "Rule 203 (seq 203) is an allow rule that is over-permissive (5a:any-src∧any-dst), violating least-privilege."
+        },
+        {
+          "vendor": "ipimen",
+          "anomaly_type": "over_permissive",
+          "rules": [
+            {
+              "rule_id": "314",
+              "rule_name": "Finance team to NTP Server",
+              "seq": 314,
+              "role": "over_permissive"
+            }
+          ],
+          "risk": 0.689,
+          "sigma": 1.0,
+          "phi": 0.689,
+          "factors": {
+            "blast_radius": 0.4005,
+            "exposure": 1.0,
+            "permissiveness": 0.6667
+          },
+          "explanation": "Rule 314 (seq 314) is an allow rule that is over-permissive (5a:any-src∧any-dst), violating least-privilege."
+        },
+        {
+          "vendor": "ipimen",
+          "anomaly_type": "shadowing",
+          "rules": [
+            {
+              "rule_id": "314",
+              "rule_name": "Finance team to NTP Server",
+              "seq": 314,
+              "role": "shadowing"
+            },
+            {
+              "rule_id": "386",
+              "rule_name": "Web servers access to any",
+              "seq": 386,
+              "role": "shadowed"
+            }
+          ],
+          "risk": 0.6583,
+          "sigma": 1.0,
+          "phi": 0.6583,
+          "factors": {
+            "blast_radius": 0.3082,
+            "exposure": 1.0,
+            "permissiveness": 0.6667
+          },
+          "explanation": "Rule 386 (seq 386, action 'deny') is shadowed by earlier rule 314 (seq 314, action 'allow'): every flow it matches is already decided by the earlier rule, so it never executes."
+        }
+      ]
+    }
+  }
+}

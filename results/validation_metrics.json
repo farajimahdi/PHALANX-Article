@@ -1,0 +1,243 @@
+{
+  "sample_size": 100,
+  "confidence_level": 0.95,
+  "rater1": {
+    "overall": {
+      "n": 100,
+      "genuine": 74,
+      "legitimate": 26,
+      "artifact": 0,
+      "precision": 0.74,
+      "precision_ci95": {
+        "lower": 0.6427,
+        "upper": 0.8226
+      },
+      "artifact_rate": 0.0,
+      "artifact_rate_ci95": {
+        "lower": 0.0,
+        "upper": 0.0362
+      }
+    },
+    "by_class": {
+      "conflict": {
+        "n": 20,
+        "genuine": 13,
+        "legitimate": 7,
+        "artifact": 0,
+        "precision": 0.65,
+        "precision_ci95": {
+          "lower": 0.4078,
+          "upper": 0.8461
+        },
+        "artifact_rate": 0.0,
+        "artifact_rate_ci95": {
+          "lower": 0.0,
+          "upper": 0.1684
+        }
+      },
+      "generalization": {
+        "n": 20,
+        "genuine": 19,
+        "legitimate": 1,
+        "artifact": 0,
+        "precision": 0.95,
+        "precision_ci95": {
+          "lower": 0.7513,
+          "upper": 0.9987
+        },
+        "artifact_rate": 0.0,
+        "artifact_rate_ci95": {
+          "lower": 0.0,
+          "upper": 0.1684
+        }
+      },
+      "over_permissive": {
+        "n": 20,
+        "genuine": 19,
+        "legitimate": 1,
+        "artifact": 0,
+        "precision": 0.95,
+        "precision_ci95": {
+          "lower": 0.7513,
+          "upper": 0.9987
+        },
+        "artifact_rate": 0.0,
+        "artifact_rate_ci95": {
+          "lower": 0.0,
+          "upper": 0.1684
+        }
+      },
+      "redundancy": {
+        "n": 20,
+        "genuine": 7,
+        "legitimate": 13,
+        "artifact": 0,
+        "precision": 0.35,
+        "precision_ci95": {
+          "lower": 0.1539,
+          "upper": 0.5922
+        },
+        "artifact_rate": 0.0,
+        "artifact_rate_ci95": {
+          "lower": 0.0,
+          "upper": 0.1684
+        }
+      },
+      "shadowing": {
+        "n": 20,
+        "genuine": 16,
+        "legitimate": 4,
+        "artifact": 0,
+        "precision": 0.8,
+        "precision_ci95": {
+          "lower": 0.5634,
+          "upper": 0.9427
+        },
+        "artifact_rate": 0.0,
+        "artifact_rate_ci95": {
+          "lower": 0.0,
+          "upper": 0.1684
+        }
+      }
+    }
+  },
+  "rater2": {
+    "overall": {
+      "n": 100,
+      "genuine": 78,
+      "legitimate": 22,
+      "artifact": 0,
+      "precision": 0.78,
+      "precision_ci95": {
+        "lower": 0.6861,
+        "upper": 0.8567
+      },
+      "artifact_rate": 0.0,
+      "artifact_rate_ci95": {
+        "lower": 0.0,
+        "upper": 0.0362
+      }
+    },
+    "by_class": {
+      "conflict": {
+        "n": 20,
+        "genuine": 15,
+        "legitimate": 5,
+        "artifact": 0,
+        "precision": 0.75,
+        "precision_ci95": {
+          "lower": 0.509,
+          "upper": 0.9134
+        },
+        "artifact_rate": 0.0,
+        "artifact_rate_ci95": {
+          "lower": 0.0,
+          "upper": 0.1684
+        }
+      },
+      "generalization": {
+        "n": 20,
+        "genuine": 20,
+        "legitimate": 0,
+        "artifact": 0,
+        "precision": 1.0,
+        "precision_ci95": {
+          "lower": 0.8316,
+          "upper": 1.0
+        },
+        "artifact_rate": 0.0,
+        "artifact_rate_ci95": {
+          "lower": 0.0,
+          "upper": 0.1684
+        }
+      },
+      "over_permissive": {
+        "n": 20,
+        "genuine": 19,
+        "legitimate": 1,
+        "artifact": 0,
+        "precision": 0.95,
+        "precision_ci95": {
+          "lower": 0.7513,
+          "upper": 0.9987
+        },
+        "artifact_rate": 0.0,
+        "artifact_rate_ci95": {
+          "lower": 0.0,
+          "upper": 0.1684
+        }
+      },
+      "redundancy": {
+        "n": 20,
+        "genuine": 7,
+        "legitimate": 13,
+        "artifact": 0,
+        "precision": 0.35,
+        "precision_ci95": {
+          "lower": 0.1539,
+          "upper": 0.5922
+        },
+        "artifact_rate": 0.0,
+        "artifact_rate_ci95": {
+          "lower": 0.0,
+          "upper": 0.1684
+        }
+      },
+      "shadowing": {
+        "n": 20,
+        "genuine": 17,
+        "legitimate": 3,
+        "artifact": 0,
+        "precision": 0.85,
+        "precision_ci95": {
+          "lower": 0.6211,
+          "upper": 0.9679
+        },
+        "artifact_rate": 0.0,
+        "artifact_rate_ci95": {
+          "lower": 0.0,
+          "upper": 0.1684
+        }
+      }
+    }
+  },
+  "cohens_kappa": {
+    "n": 100,
+    "kappa": 0.8359,
+    "kappa_ci95_bootstrap": {
+      "resamples": 10000,
+      "seed": 20260805,
+      "lower": 0.6962,
+      "upper": 0.9481
+    },
+    "landis_koch": {
+      "label": "almost perfect",
+      "span": "0.81-1.00"
+    },
+    "landis_koch_ci_bands": {
+      "at_lower_limit": {
+        "label": "substantial",
+        "span": "0.61-0.80"
+      },
+      "at_upper_limit": {
+        "label": "almost perfect",
+        "span": "0.81-1.00"
+      },
+      "interval_spans_two_bands": true
+    },
+    "observed_agreement": 0.94,
+    "expected_agreement": 0.6344,
+    "disagreements": 6,
+    "categories_used": [
+      "G",
+      "L"
+    ],
+    "reduces_to_two_category": true,
+    "confusion": {
+      "G->G": 73,
+      "G->L": 1,
+      "L->G": 5,
+      "L->L": 21
+    }
+  }
+}

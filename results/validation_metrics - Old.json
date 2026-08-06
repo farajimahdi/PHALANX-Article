@@ -1,0 +1,101 @@
+{
+  "sample_size": 100,
+  "rater1": {
+    "overall": {
+      "n": 100,
+      "genuine": 80,
+      "legitimate": 20,
+      "artifact": 0,
+      "precision": 0.8
+    },
+    "by_class": {
+      "conflict": {
+        "n": 20,
+        "genuine": 0,
+        "legitimate": 20,
+        "artifact": 0,
+        "precision": 0.0
+      },
+      "generalization": {
+        "n": 20,
+        "genuine": 20,
+        "legitimate": 0,
+        "artifact": 0,
+        "precision": 1.0
+      },
+      "over_permissive": {
+        "n": 20,
+        "genuine": 20,
+        "legitimate": 0,
+        "artifact": 0,
+        "precision": 1.0
+      },
+      "redundancy": {
+        "n": 20,
+        "genuine": 20,
+        "legitimate": 0,
+        "artifact": 0,
+        "precision": 1.0
+      },
+      "shadowing": {
+        "n": 20,
+        "genuine": 20,
+        "legitimate": 0,
+        "artifact": 0,
+        "precision": 1.0
+      }
+    }
+  },
+  "rater2": {
+    "overall": {
+      "n": 100,
+      "genuine": 80,
+      "legitimate": 20,
+      "artifact": 0,
+      "precision": 0.8
+    },
+    "by_class": {
+      "conflict": {
+        "n": 20,
+        "genuine": 0,
+        "legitimate": 20,
+        "artifact": 0,
+        "precision": 0.0
+      },
+      "generalization": {
+        "n": 20,
+        "genuine": 20,
+        "legitimate": 0,
+        "artifact": 0,
+        "precision": 1.0
+      },
+      "over_permissive": {
+        "n": 20,
+        "genuine": 20,
+        "legitimate": 0,
+        "artifact": 0,
+        "precision": 1.0
+      },
+      "redundancy": {
+        "n": 20,
+        "genuine": 20,
+        "legitimate": 0,
+        "artifact": 0,
+        "precision": 1.0
+      },
+      "shadowing": {
+        "n": 20,
+        "genuine": 20,
+        "legitimate": 0,
+        "artifact": 0,
+        "precision": 1.0
+      }
+    }
+  },
+  "cohens_kappa": {
+    "n": 100,
+    "kappa": 1.0,
+    "observed_agreement": 1.0,
+    "expected_agreement": 0.68
+  }
+}

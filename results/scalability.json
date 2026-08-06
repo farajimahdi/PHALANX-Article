@@ -1,0 +1,47 @@
+{
+  "label": "synthetic, scalability only",
+  "seed": 42,
+  "environment": {
+    "python": "3.13.14",
+    "platform": "Windows-11-10.0.22000-SP0"
+  },
+  "results": [
+    {
+      "n": 250,
+      "enabled": 220,
+      "time_s": 0.14442,
+      "findings": 0,
+      "us_per_pair": 5.9677
+    },
+    {
+      "n": 500,
+      "enabled": 437,
+      "time_s": 0.77407,
+      "findings": 6,
+      "us_per_pair": 8.1067
+    },
+    {
+      "n": 1000,
+      "enabled": 853,
+      "time_s": 2.5114,
+      "findings": 16,
+      "us_per_pair": 6.9032
+    },
+    {
+      "n": 2000,
+      "enabled": 1698,
+      "time_s": 10.97271,
+      "findings": 96,
+      "us_per_pair": 7.6115
+    },
+    {
+      "n": 4000,
+      "enabled": 3383,
+      "time_s": 54.62471,
+      "findings": 465,
+      "us_per_pair": 9.5459
+    }
+  ],
+  "fitted_exponent": 2.095,
+  "theoretical": "O(n^2) pairwise (Section 6.7)"
+}

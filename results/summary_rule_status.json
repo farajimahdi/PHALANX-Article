@@ -1,0 +1,110 @@
+{
+  "per_vendor": {
+    "fortigate": {
+      "rules_enabled": 420,
+      "anomalies_raw": 129,
+      "anomalies_rule_status": 129,
+      "anomalies": {
+        "shadowing": 7,
+        "redundancy": 19,
+        "conflict": 74,
+        "generalization": 15,
+        "over_permissive": 14
+      },
+      "filter_meta": {
+        "collapsed_anchors": 1,
+        "generalization_raw": 15,
+        "generalization_collapsed": 14,
+        "negation_excluded": 0
+      }
+    },
+    "paloalto": {
+      "rules_enabled": 420,
+      "anomalies_raw": 137,
+      "anomalies_rule_status": 137,
+      "anomalies": {
+        "shadowing": 7,
+        "redundancy": 21,
+        "conflict": 78,
+        "generalization": 17,
+        "over_permissive": 14
+      },
+      "filter_meta": {
+        "collapsed_anchors": 2,
+        "generalization_raw": 17,
+        "generalization_collapsed": 15,
+        "negation_excluded": 0
+      }
+    },
+    "pfsense": {
+      "rules_enabled": 419,
+      "anomalies_raw": 409,
+      "anomalies_rule_status": 300,
+      "anomalies": {
+        "shadowing": 63,
+        "redundancy": 101,
+        "conflict": 51,
+        "generalization": 38,
+        "over_permissive": 47
+      },
+      "filter_meta": {
+        "collapsed_anchors": 7,
+        "generalization_raw": 147,
+        "generalization_collapsed": 140,
+        "negation_excluded": 0
+      }
+    },
+    "opnsense": {
+      "rules_enabled": 419,
+      "anomalies_raw": 409,
+      "anomalies_rule_status": 300,
+      "anomalies": {
+        "shadowing": 63,
+        "redundancy": 101,
+        "conflict": 51,
+        "generalization": 38,
+        "over_permissive": 47
+      },
+      "filter_meta": {
+        "collapsed_anchors": 7,
+        "generalization_raw": 147,
+        "generalization_collapsed": 140,
+        "negation_excluded": 0
+      }
+    },
+    "ipimen": {
+      "rules_enabled": 420,
+      "anomalies_raw": 303,
+      "anomalies_rule_status": 104,
+      "anomalies": {
+        "shadowing": 9,
+        "redundancy": 18,
+        "conflict": 47,
+        "generalization": 16,
+        "over_permissive": 14
+      },
+      "filter_meta": {
+        "collapsed_anchors": 2,
+        "generalization_raw": 17,
+        "generalization_collapsed": 15,
+        "negation_excluded": 198
+      }
+    }
+  },
+  "totals": {
+    "anomalies": {
+      "shadowing": 149,
+      "redundancy": 260,
+      "conflict": 301,
+      "generalization": 124,
+      "over_permissive": 136
+    },
+    "anomalies_rule_status": 970,
+    "filter_meta": {
+      "collapsed_anchors": 19,
+      "generalization_raw": 343,
+      "generalization_collapsed": 324,
+      "negation_excluded": 198
+    }
+  }
+}
