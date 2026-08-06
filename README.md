@@ -1,9 +1,9 @@
-# PHALANX — Continuous Firewall Policy Hygiene Framework
+# PHALANX (Policy-Hygiene Analysis Layer for ANomaly eXamination)
 
 PHALANX (named after the ancient defensive formation) parses firewall configurations from multiple vendors, converts them to a single schema, and flags structural issues such as shadowed, redundant, or over-permissive rules, without relying on any ML model or vendor-specific heuristics guessing.
 
 Companion code and dataset for the paper:
-*Continuous Firewall Policy Hygiene: A Vendor-Agnostic, Explainable, and Reproducible Framework with Human-in-the-Loop Remediation*
+*PHALANX: A Reproducible Multi-Vendor Framework for Structural Firewall Policy Analysis and Finding Prioritization*
 
 ## Status
 
@@ -35,7 +35,7 @@ python main.py
 
 ## Layout
 
-- `real-dataset/` — anonymized and synthetic firewall configs, unified CSV output
+- `Real-Dataset/` — anonymized and synthetic firewall configs, unified CSV output
 - `paper/` — manuscript sections and references
 - `code/` — parsers, anomaly detection, risk scoring, tests
 - `results/` — generated reports and metrics
